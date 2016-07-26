@@ -1,0 +1,140 @@
+(pcb "/Users/yardenc/Documents/Experiments/Ephys/Setup Hardware/Flex Cable/IntanFlex.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.2-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (rect pcb 70983.3 -78521.2 105195 -397407)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 127)
+      (clearance 25.5)
+      (clearance 25.5 (type default_smd))
+      (clearance 6.35 (type smd_smd))
+    )
+  )
+  (placement
+    (component "OMNETICS_PZN-12-AA"
+      (place S1 88900 -91522.4 front 0 (PN "RHD2000-CABLE-DAQ-SIDE"))
+      (place S2 88900 -386522 front 180 (PN "RHD2000-CABLE-AMP-SIDE"))
+    )
+  )
+  (library
+    (image "OMNETICS_PZN-12-AA"
+      (outline (path signal 127  -2222.5 3987.8  2222.5 3987.8))
+      (outline (path signal 127  2222.5 3987.8  2222.5 2207.26))
+      (outline (path signal 127  2222.5 2207.26  2222.5 -330.2))
+      (outline (path signal 127  -2222.5 -330.2  -2222.5 2207.26))
+      (outline (path signal 127  -2222.5 2207.26  -2222.5 3987.8))
+      (outline (path signal 127  -1587.5 -330.2  -1587.5 -444.5))
+      (outline (path signal 127  -952.5 -330.2  -952.5 -444.5))
+      (outline (path signal 127  1587.5 -330.2  1587.5 -444.5))
+      (outline (path signal 127  -2222.5 -330.2  -1587.5 -330.2))
+      (outline (path signal 127  -1587.5 -330.2  -952.5 -330.2))
+      (outline (path signal 127  -952.5 -330.2  -317.5 -330.2))
+      (outline (path signal 127  -317.5 -330.2  317.5 -330.2))
+      (outline (path signal 127  317.5 -330.2  952.5 -330.2))
+      (outline (path signal 127  952.5 -330.2  1587.5 -330.2))
+      (outline (path signal 127  1587.5 -330.2  2222.5 -330.2))
+      (outline (path signal 127  -317.5 -330.2  -317.5 -444.5))
+      (outline (path signal 127  317.5 -330.2  317.5 -444.5))
+      (outline (path signal 127  952.5 -330.2  952.5 -444.5))
+      (outline (path signal 127  -2222.5 2207.26  2222.5 2207.26))
+      (pin Rect[T]Pad_381x762_um (rotate 180) B1 1587.5 -1016)
+      (pin Rect[T]Pad_381x762_um (rotate 180) B2 952.5 -1016)
+      (pin Rect[T]Pad_381x762_um (rotate 180) B3 317.5 -1016)
+      (pin Rect[T]Pad_381x762_um (rotate 180) B4 -317.5 -1016)
+      (pin Rect[T]Pad_381x762_um (rotate 180) B5 -952.5 -1016)
+      (pin Rect[T]Pad_381x762_um (rotate 180) B6 -1587.5 -1016)
+      (pin Rect[T]Pad_381x1016_um (rotate 180) T1 1587.5 -2159)
+      (pin Rect[T]Pad_381x1016_um (rotate 180) T2 952.5 -2159)
+      (pin Rect[T]Pad_381x1016_um (rotate 180) T3 317.5 -2159)
+      (pin Rect[T]Pad_381x1016_um (rotate 180) T4 -317.5 -2159)
+      (pin Rect[T]Pad_381x1016_um (rotate 180) T5 -952.5 -2159)
+      (pin Rect[T]Pad_381x1016_um (rotate 180) T6 -1587.5 -2159)
+    )
+    (padstack Rect[T]Pad_381x762_um
+      (shape (rect F.Cu -190.5 -381 190.5 381))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_381x1016_um
+      (shape (rect F.Cu -190.5 -508 190.5 508))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(S1-PadB1)"
+      (pins S1-B1 S2-T1)
+    )
+    (net "Net-(S1-PadB2)"
+      (pins S1-B2 S2-T2)
+    )
+    (net "Net-(S1-PadB3)"
+      (pins S1-B3 S2-T3)
+    )
+    (net "Net-(S1-PadB4)"
+      (pins S1-B4 S2-T4)
+    )
+    (net "Net-(S1-PadB5)"
+      (pins S1-B5 S2-T5)
+    )
+    (net "Net-(S1-PadB6)"
+      (pins S1-B6 S2-T6)
+    )
+    (net "Net-(S1-PadT1)"
+      (pins S1-T1 S2-B1)
+    )
+    (net "Net-(S1-PadT2)"
+      (pins S1-T2 S2-B2)
+    )
+    (net "Net-(S1-PadT3)"
+      (pins S1-T3 S2-B3)
+    )
+    (net "Net-(S1-PadT4)"
+      (pins S1-T4 S2-B4)
+    )
+    (net "Net-(S1-PadT5)"
+      (pins S1-T5 S2-B5)
+    )
+    (net "Net-(S1-PadT6)"
+      (pins S1-T6 S2-B6)
+    )
+    (class kicad_default "" "Net-(S1-PadB1)" "Net-(S1-PadB2)" "Net-(S1-PadB3)"
+      "Net-(S1-PadB4)" "Net-(S1-PadB5)" "Net-(S1-PadB6)" "Net-(S1-PadT1)"
+      "Net-(S1-PadT2)" "Net-(S1-PadT3)" "Net-(S1-PadT4)" "Net-(S1-PadT5)"
+      "Net-(S1-PadT6)"
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 127)
+        (clearance 25.5)
+      )
+    )
+  )
+  (wiring
+  )
+)
