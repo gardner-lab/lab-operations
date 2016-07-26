@@ -1,0 +1,16 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# SinglePad
+#
+DEF SinglePad U 0 0 N N 1 F N
+F0 "U" 0 0 60 H V C CNN
+F1 "SinglePad" 0 0 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+X phole ? 0 50 39 U 50 50 1 1 I I
+ENDDRAW
+ENDDEF
+#
+#End Library
