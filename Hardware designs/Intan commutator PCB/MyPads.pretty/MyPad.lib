@@ -1,0 +1,16 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# MyPad
+#
+DEF MyPad U 0 0 N N 1 F N
+F0 "U" 0 0 60 H V C CNN
+F1 "MyPad" 0 0 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+X pin1 1 250 200 200 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

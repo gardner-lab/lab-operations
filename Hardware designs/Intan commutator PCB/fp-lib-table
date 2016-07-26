@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name connectors)(type Legacy)(uri "/Users/yardenc/Documents/Tech Dev/Intan/connectors.mod")(options "")(descr ""))
+  (lib (name MyPads)(type KiCad)(uri "$(KIPRJMOD)/MyPads.pretty")(options "")(descr ""))
+)
