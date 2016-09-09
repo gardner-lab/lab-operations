@@ -9,7 +9,7 @@ This folder contains the files for a very simple example:
 5. The server side html (MonitoringChart.html)
 6. The PI's monitoring python code (RunArduino.py)
 
-A folder on the PI should include items 2,3,5,6 
+A folder on the PI should include items 2,3,5,6.
 Than, the PI should run a web server (e.g. by opening a terminal and running "python -m SimpleHTTPServer port#" in the folder that contains these files. port# is whatever port number is available, e.g. 8000)
 In another terminal window cd to the same folder and run "python RunArduino.py"
 
