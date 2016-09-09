@@ -5,3 +5,5 @@ This folder contains the files for a very simple example:
 2. The amcharts JavaScript library for the web page graphics (free version)
 3. data file (data.csv)
 4. Python's serial port library (already installed in pi's)
+5. The server side html (MonitoringChart.html)
+6. The PI's monitoring python code 
