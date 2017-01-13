@@ -6,14 +6,10 @@ import astral
 import time
 import numpy
 # This version sends emails
-import smtplib
+from SuppFunctions import *
 fromaddr = 'canaryaviary502@gmail.com'
-toaddrs = 'yardenc@bu.edu'
-username = 'canaryaviary502@gmail.com'
-password = 'Canaries502'
-
-
-
+Emails = readEmailingList('Emails.txt')
+toaddrs = Emails
 
 flagstart = 0
 ser = serial.Serial('/dev/ttyACM0',9600)
@@ -44,12 +40,7 @@ else:
 	subj = 'Light cycle monitoring initialized OFF at {}'.format(date4mail)
 	msg_text = subj
 	msg = "From: %s\nTo: %s\nSubject: %s\nDate: %s\n\n%s" % ( fromaddr, toaddrs, subj, date4mail, msg_text )
-server = smtplib.SMTP('smtp.gmail.com:587')
-server.ehlo()
-server.starttls()
-server.login(username,password)
-server.sendmail(fromaddr, toaddrs, msg)
-server.quit()
+sendEmails(Emails,msg)
 # end report
 
 tmp = []
@@ -73,12 +64,7 @@ while True:
 				subj = 'Light switched to ON at {}'.format(date4mail)
 				msg_text = subj
 				msg = "From: %s\nTo: %s\nSubject: %s\nDate: %s\n\n%s" % ( fromaddr, toaddrs, subj, date4mail, msg_text )
-				server = smtplib.SMTP('smtp.gmail.com:587')
-				server.ehlo()
-				server.starttls()
-				server.login(username,password)
-				server.sendmail(fromaddr, toaddrs, msg)
-				server.quit()
+				sendEmails(Emails,msg)
 				# end report
 		else:
 			ser.write('f')
@@ -90,12 +76,7 @@ while True:
 				subj = 'Light switched to OFF at {}'.format(date4mail)
 				msg_text = subj
 				msg = "From: %s\nTo: %s\nSubject: %s\nDate: %s\n\n%s" % ( fromaddr, toaddrs, subj, date4mail, msg_text )
-				server = smtplib.SMTP('smtp.gmail.com:587')
-				server.ehlo()
-				server.starttls()
-				server.login(username,password)
-				server.sendmail(fromaddr, toaddrs, msg)
-				server.quit()
+				sendEmails(Emails,msg)
 				# end report
 	if ((time.localtime().tm_min-timesec) % 60 < 10):
 		time.sleep(0.1)
